@@ -1,0 +1,423 @@
+@media screen and (max-width: 849px) {
+	.workshop {margin: 10px 0px 20px 0px}
+	
+	
+}
+@media screen and (max-width: 500px) {
+	.workshop .span_8 {
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 960px) {
+
+    /* --------------------------------------------------------------------- */
+    /* XX. FONTS
+    /* --------------------------------------------------------------------- */
+
+    h1, h2, h3, h4 {
+    font-weight: 600;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+	h1 {
+    font-size: 3em;
+    margin-bottom: 25px;
+}
+	h1.h1jugend {
+    margin-bottom: 0;
+		font-size: 2em;
+		line-height: 1;
+	}
+	
+	h1.h1titel {
+		font-size: 3em;
+		line-height: 1.5;
+    margin-bottom: 0;
+	}
+	
+	h1.h1jahr {
+		font-size: 2em;
+		line-height: 1;
+		margin-bottom: 40px;
+	}
+	
+	h2 {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+}
+	h3 {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+	h4 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+	h5 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+#schirm-slider .schirm-comment {
+    font-size: 1em;
+    font-style: italic;
+}
+	
+	h1.underline, h2.underline {
+	padding-bottom: 10px;
+		background-size: 300px;
+}
+
+
+
+@media only screen and (max-width: 950px) {
+	
+	.partner-container {
+	flex-wrap: wrap;
+	}
+
+	.partnerlogo {
+	opacity: 0.8;
+	width: 30%;
+	height: auto;
+	margin: 0 30px 40px 30px;
+	}
+	
+	.preislogo {
+	opacity: 0.8;
+	width: 30%;
+	height: auto;
+	margin: 0 30px 40px 30px;
+	}
+	
+}
+
+
+
+@media screen and (max-width: 979px) {
+
+    /* --------------------------------------------------------------------- */
+    /* 1. DOCUMENT SETUP
+    /* --------------------------------------------------------------------- */
+
+    body {
+        font-size: 95%;
+    }
+
+
+    /* --------------------------------------------------------------------- */
+    /* 3. WRAPPER
+    /* --------------------------------------------------------------------- */
+
+    .headline-wrapper {
+		margin-bottom: 0;
+        padding: 70px 0;
+    }
+
+    .paralax-content {
+		margin-top: 70px;
+        padding: 70px 0;
+        background-attachment: scroll;
+    }
+
+
+    /* --------------------------------------------------------------------- */
+    /* 6. BANNER
+    /* --------------------------------------------------------------------- */
+
+    #banner {
+        background-attachment: scroll;
+    }
+	
+	#banner .button-wrapper {
+	    padding-top: 50px;
+	}
+	
+	#banner .scroll-down {
+	    bottom: 5px;
+	}
+
+
+    
+	
+    /* --------------------------------------------------------------------- */
+    /* 8. Newsletter
+    /* --------------------------------------------------------------------- */
+
+    .newsletter .submit {
+        margin-top: 10px;
+    }
+
+    /* --------------------------------------------------------------------- */
+    /* 3. BUTTONS (SHORTCODES)
+    /* --------------------------------------------------------------------- */
+
+    .button {
+        padding: 15px 40px;
+        font-size: 0.95em;
+    }
+	
+	
+    /* --------------------------------------------------------------------- */
+    /* 4. LINES (SHORTCODES)
+    /* --------------------------------------------------------------------- */
+
+    .hr.margin {
+        margin: 70px 0;
+    }
+
+
+    /* --------------------------------------------------------------------- */
+    /* 7. ICON BOX (SHORTCODES)
+    /* --------------------------------------------------------------------- */
+
+    .icon-box:hover i {
+        margin-top: 0;
+    }
+	
+
+    /* --------------------------------------------------------------------- */
+    /* 10. PRICING TABLE (SHORTCODES)
+    /* --------------------------------------------------------------------- */
+
+    .pricing-table {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .pricing-table:hover {
+        margin-top: 0;
+    }
+	
+    .pricing-table .price {
+        font-weight: 300;
+        font-size: 2.3em;
+    }              
+      
+    .pricing-table h3 {
+      font-size: 1.3em;
+    }
+    
+    
+	
+	
+	/* --------------------------------------------------------------------- */
+	/* 11. CONTACT
+	/* --------------------------------------------------------------------- */
+
+	.contact-row {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+
+
+}
+
+
+
+
+@media screen and (max-width: 660px) {
+	
+  
+
+.bereiche .name {
+  font-size: 1.4em;
+}
+
+    /* --------------------------------------------------------------------- */
+    /* 3. WRAPPER
+    /* --------------------------------------------------------------------- */
+
+    .headline-wrapper {
+		margin-bottom: 0;
+        padding: 50px 0;
+    }
+
+    .paralax-content {
+		margin-top: 0;
+        padding: 50px 0;
+    /*background-attachment: scroll */ 
+    
+    }
+	
+
+    /* --------------------------------------------------------------------- */
+    /* 4. HEADER
+    /* --------------------------------------------------------------------- */
+
+    #header .logo-wrapper {
+        top: 30px;
+    }
+
+   /* .social-links {
+        display: none;
+    }
+   */   
+      
+   
+   @media ( max-width : 650px ) {   
+     .social-icons a {
+		 font-size: 0.5em;
+		height: 30px;
+		width: 30px;
+		margin: 30px 5px;
+   }
+
+    
+
+}
+
+    /* --------------------------------------------------------------------- */
+    /* 5. NAVIGATION
+    /* --------------------------------------------------------------------- */
+
+    #main-navigation {
+        /*top: auto; */
+        bottom: 50px;
+    }
+    #main-navigation li {
+        margin: 0 0 8px 0;
+    }
+
+
+    /* --------------------------------------------------------------------- */
+    /* 6. BANNER
+    /* --------------------------------------------------------------------- */
+
+    #banner .big-text {
+        font-size: 4em;
+    }
+    #banner .small-text {
+        font-size: 1.2em;
+    }
+
+    #banner .scroll-down {
+		width: 50%;
+    }
+	
+	/* --------------------------------------------------------------------- */
+	/* 11. CONTACT
+	/* --------------------------------------------------------------------- */
+
+	.contact-row {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	
+
+    /* --------------------------------------------------------------------- */
+    /* 4. LINES (SHORTCODES)
+    /* --------------------------------------------------------------------- */
+
+    .hr.margin {
+        margin: 50px 0;
+    }
+	
+	
+	/* --------------------------------------------------------------------- */
+	/* 8. SLIDER (SHORTCODES)
+	/* --------------------------------------------------------------------- */
+	
+	#schirm-slider .schirm-comment {
+	    font-size: 1.1em;
+	}
+	
+h1.underline, h2.underline {
+	/*background: none;*/
+
+}
+
+
+
+
+@media screen and (max-width: 440px) {
+	
+	body {font-size: 90%;}
+
+    /* --------------------------------------------------------------------- */
+    /* 3. WRAPPER
+    /* --------------------------------------------------------------------- */
+
+    .headline-wrapper {
+		margin-bottom: 0;
+        padding: 40px 0;
+    }
+
+    .paralax-content {
+		margin-top: 0;
+        padding: 40px 0;
+    }
+
+
+    /* --------------------------------------------------------------------- */
+    /* 4. HEADER
+    /* --------------------------------------------------------------------- */
+
+    #header .logo-wrapper {
+        top: 20px;
+    }
+
+
+    /* --------------------------------------------------------------------- */
+    /* 5. NAVIGATION
+    /* --------------------------------------------------------------------- */
+
+    #main-navigation {
+        bottom: 30px;
+    }
+
+
+    /* --------------------------------------------------------------------- */
+    /* 6. BANNER
+    /* --------------------------------------------------------------------- */
+
+
+
+    #banner .big-text {
+        font-size: 3.3em;
+    }
+    #banner .small-text {
+        font-size: 1em;
+    }
+
+
+    
+	/* --------------------------------------------------------------------- */
+	/* 11. CONTACT
+	/* --------------------------------------------------------------------- */
+
+	.contact-row {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	
+	
+	/* --------------------------------------------------------------------- */
+	/* 1. TYPOGRAPHY (SHORTCODES)
+	/* --------------------------------------------------------------------- */
+    
+    h1 {
+        font-size: 1.5em;
+    }
+	
+	
+    /* --------------------------------------------------------------------- */
+    /* 4. LINES (SHORTCODES)
+    /* --------------------------------------------------------------------- */
+
+    .hr.margin {
+        margin: 40px 0;
+    }
+	
+	
+	/* --------------------------------------------------------------------- */
+	/* 8. SLIDER (SHORTCODES)
+	/* --------------------------------------------------------------------- */
+	
+	#schirm-slider .schirm-comment {
+	    font-size: 0.9em;
+	}
+	
+
+}

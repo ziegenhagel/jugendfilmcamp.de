@@ -1,0 +1,201 @@
+
+/* --------------------------------------------------------------------- */
+/* 1. BACKGROUND COLOR
+/* --------------------------------------------------------------------- */
+
+body,
+.bx-wrapper
+.bx-pager.bx-default-pager a,
+#header,
+.wrapper.color-bg, 
+.button,
+#mc_embed_signup .button,
+input.submit, 
+.toggle-box .toggle .header:hover, 
+.toggle-box .toggle .header.active,
+.bx-wrapper .bx-pager.bx-default-pager a:hover, 
+.bx-wrapper .bx-pager.bx-default-pager a.active, 
+.bx-wrapper .bx-controls-direction a:hover, 
+.alert-box,
+.headline-wrapper,
+.button-hell:hover
+{
+    background: #27333d;
+}
+
+#page-preloader,
+.pricing-table,
+.bx-wrapper .bx-loading
+{
+    background-color: #384551;
+}
+
+.skillbar,
+.toggle-box .toggle .header,
+.toggle-box .content .callout-box,
+.mobile-toggle span{
+    background-color: #e6eef7;
+}
+
+.bottom-box {
+    background-color: #232d35;
+}
+
+input.text, textarea {
+    background: rgba(0,0,0,0.12);
+}
+
+.toggle-box .toggle .header:hover,
+.toggle-box .toggle .header.active,
+#mc_embed_signup .button:hover,
+.button:hover,
+.button-hell
+{
+    background: #f0ab3f;
+}
+
+.headline-wrapper {
+	box-shadow: inset 0 0 200px rgba(0,0,0,0.6);
+    -webkit-box-shadow: inset 0 0 200px rgba(0,0,0,0.6);
+}
+
+.sticky,
+.eupopup-container{
+	background-color: rgba(39, 51, 61, 0.95);
+}
+
+/* --------------------------------------------------------------------- */
+/* 2. FONT COLOR
+/* --------------------------------------------------------------------- */
+body, 
+.skillbar .number, 
+#open-nav,
+#mc_embed_signup .button,
+.button, 
+.button.border, 
+input.submit,
+.alert-box .close:hover,
+a.popup-vimeo,
+.footer,
+a, 
+#main-navigation li a:hover, 
+#main-navigation li a.active, 
+.color, 
+.button.border:hover, 
+.icon-box:hover i,
+.social-icons a:hover,
+#team h4,
+.headline-wrapper h1,
+.headline-wrapper h2,
+.headline-wrapper h3,
+h4,
+.camptermin,
+.eupopup-button_1,
+.eupopup-button_2,
+.button-hell:hover
+{
+    color: #f0ab3f;
+}
+
+
+#open-nav:hover {
+    color: #e38b00;
+}
+
+footer,
+#main-navigation li a, 
+.social-links a, 
+.social-icons a, 
+.paralaxx-content,
+#impressum p,
+.doz-name h4,
+.headline-wrapper,
+.skillbar.voll,
+.info-text, .subinfo-text,
+.gmap3,
+.eupopup-body,
+.eupopup-container,
+.eupopup-closebutton
+{
+	color: #e6eef7;
+}
+
+.row-hauptfach:hover,
+.video-dark:hover,
+.row-fachbereiche:hover,
+#banner a,
+.more-info a,
+.eupopup-head,
+.eupopup-closebutton:hover,
+.eupopup-closebutton:active,
+.eupopup-button:hover,
+.eupopup-button:focus,
+.corona-text,
+.corona-liste {
+	color: #ffffff;
+}
+
+
+.bottom-box, p.blockquote, input.text, input.button, textarea  {
+    color: rgba(255,255,255,0.5);
+}
+
+.toggle-box .toggle .header,
+.skillbar.rest,
+.skillbar.leer,
+.button:hover,
+#mc_embed_signup .button:hover, 
+input.submit:hover,
+.button-hell{
+	color: #27333d
+}
+
+.pricing-table h3 {
+	color: #e6eef7;
+}
+
+.main_h a {color: rgba(255,255,255,1.00);}
+.main_h a:hover {color: rgba(227,139,0,1);}
+.main_h a.active {color: #F0AB3F;}
+
+
+
+/* --------------------------------------------------------------------- */
+/* 3. BORDER COLOR
+/* --------------------------------------------------------------------- */
+
+#banner 
+.scroll-down a, 
+.button.border, 
+.social-icons a, 
+.maximage-prev, 
+.maximage-next, 
+.bx-wrapper .bx-controls-direction a {
+    border-color: #d7d7d7;
+}
+
+#banner .scroll-down a:hover,
+.button, 
+input.submit, 
+.social-icons a:hover, 
+.button.border:hover, 
+p.blockquote, 
+.callout-box, 
+.maximage-prev:hover, 
+.maximage-next:hover, 
+.bx-wrapper .bx-controls-direction a:hover,
+.button-hell:hover {
+    border-color: #f0ab3f;
+}
+
+input.submit:hover {
+    border-color: #e38b00;
+}
+
+.pricing-table .header, .pricing-table .content {
+    border-color: rgba(255,255,255,0.35);
+}
+
+.button-hell {
+    border-color: #27333d;
+}

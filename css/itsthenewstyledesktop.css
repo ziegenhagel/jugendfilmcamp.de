@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (min-width: 661px) {
+	.sm-banner {
+		left: 40px;
+		top: 35px;
+	}
+	.sm-banner a {
+		margin-right: 5px;
+		opacity: 0.8;
+		-webkit-transition: opacity 0.2s;
+    	-moz-transition:    opacity 0.2s;
+    	-o-transition:      opacity 0.2s;
+    	transition:         opacity 0.2s;
+	}
+	
+	.sm-banner a:hover {
+	opacity: 1;
+	}
+	
+	.coming-soon img
+		{
+			width: 450px;
+			bottom: -250px;
+		}
+    
+    .coming-soon img.coming-soon-starter {
+        width: 400px;
+        bottom: -195px;
+        
+    }
+    
+    
+    
+    #corona .corona-text {
+        font-size: 1.5em;
+        width: 80%;
+        margin: auto;
+        position: fixed;
+}
+
+#corona .corona-image {
+    max-width: 500px;
+}
+
+#corona .button {
+    width: 33%;
+    height: 100px;
+}
+.toggle-box {
+    flex-basis: 33.3%;
+    margin: auto 0;
+}
+
+}
+
+@media ( min-width : 850px ) {
+
+    .gutters .col {
+        margin-left: 5%;
+    }
+
+    .gutters .col:first-child {
+	margin-left: 0;
+	margin-top: 0px;
+    }
+
+    .span_1 { width: 8.33333333333%; }
+    .span_2 { width: 16.6666666667%; }
+    .span_3 { width: 25%; }
+    .span_4 { width: 33.3333333333%; }
+    .span_5 { width: 41.6666666667%; }
+    .span_6 { width: 50%; }
+    .span_7 { width: 58.3333333333%; }
+    .span_8 { width: 66.6666666667%; }
+    .span_9 { width: 75%; }
+    .span_10 { width: 83.3333333333%; }
+    .span_11 { width: 91.6666666667%; }
+    .span_12 { width: 100%; }
+    .span_13 { width: 14.2857142857142%; }
+
+    .gutters .span_1 { width: 3.75%; }
+    .gutters .span_2 { width: 12.5%; }
+    .gutters .span_3 { width: 21.25%; }
+    .gutters .span_4 { width: 30%; }
+    .gutters .span_5 { width: 38.75%; }
+    .gutters .span_6 { width: 47.5%; }
+    .gutters .span_7 { width: 56.25%; }
+    .gutters .span_8 { width: 65%; }
+    .gutters .span_9 { width: 73.75%; }
+    .gutters .span_10 { width: 82.5%; }
+    .gutters .span_11 { width: 91.25%; }
+    .gutters .span_12 { width: 100%; }
+    .gutters .span_13 { width: 14.2857142857142%; }
+	
+	.hr, .hr .white {display: none;}
+	
+	#banner .banner-container {
+	top: 15%;
+	}
+	
+	.maximage-next, .maximage-prev {
+	display: block;
+	}
+    
+    .paralax-bereiche {
+    background-image: url('../images/banner/paralax-verwirrt.jpg');
+	background-position: center bottom;
+}
+.paralax-facts {
+    background-image: url('../images/banner/facts_background.jpg');
+}
+.paralax-filme {
+    background-image: url('../images/banner/paralax-unterstutzer.jpg');	
+	background-position: center bottom;
+}
+.paralax-comments {
+    background-image: url('../images/banner/paralax-laenger.jpg');
+}
+.paralax-newsletter {
+    background-image: url('../images/banner/news_background.jpg');
+}
+.paralax-contact {
+    background-image: url('../images/banner/contact_background.jpg');
+}
+.paralax-unterstutzer {
+    background-image: url('../images/banner/buchen_background.jpg');
+}
+.paralax-termine {
+    background-image: url('../images/banner/paralax_termine.jpg');
+}
+    
+.neu-logo {
+    width: 14%;
+	left: 83%;
+	top: -25px;
+}
+
+.wiederda-logo {
+    width: 35%;
+	min-width: 90px;
+	left: 60%;
+	top: 100%;
+    -ms-transform: rotate(-7deg); /* IE 9 */
+	-webkit-transform: rotate(-7deg); /* Safari */
+	transform: rotate(-7deg);
+}
+    
+
+
+}
+
+
+
+@media only screen and (min-width: 1330px) {
+	
+	nav {
+		float: right;
+		width: 85%;
+		padding-top: 6px;
+	}
+	
+	nav ul {
+  		float: right;
+		padding: 0;
+	}
+	
+	nav ul li {
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 30px;
+		line-height: 1.5;
+	}
+	
+	nav ul li.social{
+		margin: 0px;
+		padding-top: 2px;
+
+	}
+	
+	.mobile-toggle {
+		display: none;
+	}
+}

@@ -1,0 +1,108 @@
+/*	----------------------------------------------------------------
+	MaxCycle (Fullscreen Slideshow for use with jQuery Cycle Plugin)
+	----------------------------------------------------------------
+	
+	Demo at: http://www.aaronvanderzwan.com/maxcycle/
+	Download and Info at: http://github.com/akv2/MaxCycle---jQuery-Plugin/
+	Copyright (c) 2007-2011 Aaron Vanderzwan
+	Dual licensed under the MIT and GPL licenses.
+	
+*/
+/*! Version: 2.0.73 (12-Oct-2012) */
+
+
+.mc-hide-scrolls{
+	overflow:hidden;
+}
+
+body .mc-cycle {
+	height:100%;
+	left:0;
+	overflow:hidden;
+	position:fixed;
+	top:0;
+	width:100%;
+	z-index:-1;
+}
+
+div.mc-image {
+	/*NOTE: Mozilla flickers when fading and using 'all', so we have to be specific with what property we want to transition:
+	 	If you are using fading transitions, use 'opacity: */
+	-webkit-transition: opacity 1s ease-in-out; 
+	-moz-transition: opacity 1s ease-in-out; 
+	-o-transition: opacity 1s ease-in-out; 
+	transition: opacity 1s ease-in-out;
+	
+	/*If you are using horizontal slide transitions, use the following CSS:
+	-webkit-transition: left 1s ease-in-out; 
+	-moz-transition: left 1s ease-in-out; 
+	-o-transition: left 1s ease-in-out; 
+	transition: left 1s ease-in-out;*/
+	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position:center center;
+	background-repeat:no-repeat;
+	height:100%;
+	overflow:hidden;
+	width:100%;
+}
+
+.mc-old-browser .mc-image {
+	overflow:hidden;
+}
+
+
+
+
+#maximage-slider {
+    position: relative !important;
+	z-index: 1;
+}
+
+.youtube-video, video {
+    left:0;
+    position:absolute;
+    top:0;
+}
+iframe{
+	max-width:100% !important;
+}
+
+/* CONTROLS */
+
+.maximage-prev {
+	right: 100px;
+}
+
+.maximage-next {
+	right: 40px;
+}
+
+.maximage-prev, .maximage-next {
+	font-size: 2em;
+	opacity: 0.8;
+	position: absolute;
+	bottom: 50px;
+	width: 50px;
+	height: 50px;
+	z-index: 5;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition:    opacity 0.2s;
+    -o-transition:      opacity 0.2s;
+    transition:         opacity 0.2s;
+}
+.maximage-prev:hover, .maximage-next:hover {
+	opacity: 1;
+}
+
+
+@media screen and (max-width: 979px) { 
+
+	.maximage-prev, .maximage-next {
+		bottom: 20px;
+	}
+
+}

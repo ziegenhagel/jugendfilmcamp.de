@@ -1,0 +1,51 @@
+/* --------------------------------------------------------------------- */
+/* 1.1 PAGE PRELOADER
+/* --------------------------------------------------------------------- */
+#page-preloader {
+	display: none !important;
+}
+
+
+/* --------------------------------------------------------------------- */
+/* 7. WORK
+/* --------------------------------------------------------------------- */
+
+#intro-preview .layer {
+    background: #48a65b;
+}
+
+#doz-preview .layer {
+    background: #48a65b;
+}
+
+
+
+/* --------------------------------------------------------------------- */
+/* 5. FORM (SHORTCODES)
+/* --------------------------------------------------------------------- */
+
+input.text {
+    color: #d7d7d7;
+    background: url('../images/layout/ie_transparent_background.png') repeat;
+}
+
+textarea {
+    color: #d7d7d7;
+    background: url('../images/layout/ie_transparent_background.png') repeat;
+}
+
+
+/* --------------------------------------------------------------------- */
+/* 8. SLIDER (SHORTCODES)
+/* --------------------------------------------------------------------- */
+
+/* === 8.4 COMMENT SLIDER === */
+
+#comment-slider li {
+    padding-bottom: 90px;
+}
+
+#comment-slider .client-img {
+    width: 200px;
+    height: 200px;
+}

@@ -1,0 +1,1031 @@
+@charset "utf-8";
+/* CSS Document */
+/* --------------------------------------------------------------------- */
+/* 	SET ALL ELEMENTS TO BOX-SIZING : BORDER-BOX
+/* --------------------------------------------------------------------- */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+
+
+
+    *behavior: url('../scripts/boxsizing.htc');
+    /*	If you need support for IE7 and lower make
+        sure the boxsizing.htc file is linked properly.
+        More info here:  https://github.com/Schepp/box-sizing-polyfill */
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0px;
+}
+
+body {
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 1.7;
+    /*color: #d7d7d7;
+    background: #2d3943;*/
+    height: 100%;
+	width: 100%;
+    overflow-x: hidden;
+}
+
+/* === 1.1 PAGE PRELOADER === */
+
+#page-preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	background: #27333d;
+}
+#page-preloader .loader {
+	margin-top: 15%;
+	text-align: center;
+}
+#page-preloader .loader img {
+	margin: auto;
+	width: 201px;
+}
+
+
+#corona {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.8);
+    position: fixed;
+    z-index: 99998;
+    text-align: center;
+}
+
+#corona .corona-text {
+    font-size: 1.5em;
+    width: 80%;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#corona .corona-image {
+    transform: rotate(-3deg);
+    margin: 0 auto 30px auto;
+    max-height: 100px;
+}
+
+#corona .button {
+    width: 90%;
+    margin: 15px 10px;
+    vertical-align: middle;
+}
+
+.corona-liste {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+@media screen and (max-height: 500px) {
+    #corona .corona-text {
+        font-size: 1.2em;
+    }
+
+    #corona .corona-image {
+        margin: 0 auto 30px auto;
+        max-height: 100px;
+    }
+
+    #corona .button {
+        margin: 10px 0px;
+    }
+}
+
+/*=====GENERAL=====*/
+
+#cookie-popup { 
+  text-align: center;
+  position: fixed;
+  bottom: 0px; 
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  font-size:14px; 
+  line-height:20px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  }
+
+
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+p {
+	font-size: 1em;
+}
+
+p.max-width {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+p.undertitle {
+    max-width: 1000px;
+    margin: 0 auto 25px auto;
+	padding-bottom: 25px;
+    text-transform: none;
+    font-size: 1.1em;
+}
+
+#impressum p {text-align: left;}
+#impressum h4 {margin-top: 25px;}
+
+h1, h2, h3, h4 {
+    font-weight: 400;
+    letter-spacing: 0.075em;
+    line-height: 1.5;
+	text-transform: uppercase;
+}
+h1 {
+    font-size: 5em;
+    margin-bottom: 25px;
+}
+
+h1.h1jugend {
+	margin-bottom: 0;
+	font-size: 3em;
+	line-height: 1;
+}
+
+h1.h1titel {
+	margin-bottom: 0;
+	
+}
+
+h1.h1jahr {
+	line-height: 1;
+	font-size: 2em;
+	margin-bottom: 60px;
+	
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.1em;
+    margin: 30px 0;
+}
+
+h1.underline, h2.underline, h3.underline, h4.underline {
+}
+
+h1.underline, h2.underline {
+	padding-bottom: 20px;
+	background: url('../images/layout/underline.svg') bottom center no-repeat;
+	background-size: 500px;
+}
+
+h3.underline, h4.underline {
+    padding-bottom: 5px;
+}
+
+#page-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+::selection {
+    background: #efad1f;
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background: #efad1f;
+    color: #ffffff;
+}
+
+iframe{
+	max-width:100% !important;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+svg {
+	width: 100%;
+	height: 100%;
+}
+
+/*===========================Banner==========================*/
+
+#banner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#banner .banner-container {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+    line-height: 1.3;
+    z-index: 5;
+}
+
+#banner .big-text {
+    display: block;
+    font-weight: 600;
+    font-size: 5em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+#banner .scroll-down {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+#banner .scroll-down a {
+    display: inline-block;
+	width: 50px;
+	height: 50px;
+	font-size: 3em;
+    -webkit-transition: all 0.2s;
+    -moz-transition:    all 0.2s;
+    -o-transition:      all 0.2s;
+	transition:         all 0.2s;
+	animation-play-state: running;
+	-webkit-animation-name: jump;
+    -moz-animation-name: jump;
+    -o-animation-name: jump;
+	-ms-animation-name: jump;
+    animation-name: jump;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -moz-animation-direction: normal;
+    -o-animation-direction: normal;
+    -ms-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    -ms-animation-duration: 3s;
+    animation-duration: 3s;
+	
+}
+#banner .scroll-down a:hover {
+	animation-play-state: paused;
+}
+
+@-moz-keyframes jump {
+  0% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  20% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  50% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  70% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+}
+
+@-webkit-keyframes jump {
+  0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+  20% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  70% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+
+}
+
+@-o-keyframes jump {
+  0% {
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  20% {
+    -o-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  50% {
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  70% {
+    -o-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+}
+
+@-ms-keyframes jump {
+  0% {
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  20% {
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  50% {
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  70% {
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-30px);
+  }
+}
+
+
+.sm-banner {
+	position: absolute;
+	left: 25px;
+	top: 20px;
+	z-index: 5;
+    
+}
+
+.sm-banner svg
+{
+	fill: white;
+	opacity: 1;
+	width: 30px;
+}
+
+.maximage-next, .maximage-prev {
+display: none;
+}
+
+.coming-soon
+	{	position: absolute;
+		bottom: 50%;
+		right: 50%;
+		pointer-events: none;
+		transform: translate(50%,50%);
+		
+	}
+
+.coming-soon img
+	{
+		width: 300px;
+		position: relative;
+		bottom: -200px;
+	}
+
+.coming-soon img.coming-soon-starter {
+    width: 300px;
+    bottom: -170px;
+    left: -10px;
+    transform: rotate(-3deg);
+}
+
+/*Headline wrapper*/
+
+
+
+.section {
+    display: block;
+}
+
+.headline-wrapper {
+    margin-bottom: 0;
+    padding: 50px 0;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* === 3.1 PARALLAX WRAPPER === */
+
+.paralaxx-content {
+    width: 100%;
+	margin-top: 0;
+	padding: 50px 0;
+    text-align: center;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.paralax-bereiche, 
+.paralax-facts, 
+.paralax-filme, 
+.paralax-comments, 
+.paralax-newsletter,
+.paralax-contact,
+.paralax-unterstutzer,
+.paralax-termine {
+    background-image: url('../images/banner/mobile_background_blue.jpg');
+}
+
+
+
+
+
+
+/* --------------------------------------------------------------------- */
+/*	ROW CONTAINER
+/* --------------------------------------------------------------------- */
+.row {
+    position: relative;
+    max-width: 1260px;
+    min-width: 260px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* --------------------------------------------------------------------- */
+/*	SELF CLEARING FLOATS - CLEARFIX METHOD
+/* --------------------------------------------------------------------- */
+
+.container:after,
+.row:after,
+.col:after,
+.clr:after,
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* --------------------------------------------------------------------- */
+/*	DEFAULT COLUMN STYLES
+/* --------------------------------------------------------------------- */
+
+.col {
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+
+
+/*.gutters .col {
+	margin-bottom: 40px;
+}*/'
+
+.gutters .col:last-child {
+	margin-bottom: 0;
+}
+
+/*==================videos==================*/
+
+.hr {
+    width: 100%;
+	margin: 10px 0 10px 0px;
+    height: 1px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+	overflow: hidden;
+}
+
+.hr .white {
+    border-top: 1px solid rgba(39, 51, 61, 0.5);
+}
+.hr.margin {
+   margin: 80px 0;
+}
+
+
+.starter-intro h4{
+	margin: 15px 0;
+}
+
+.camptermin {
+	font-size: 0.9em;
+	margin: 0 20px;
+}
+/* ======================================FORM =====================================================*/
+
+input.text, input.button, textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    font-style: italic;
+    font-size: 0.85em;
+}
+
+input.text {
+    width: 100%;
+    max-width: 450px;
+    padding: 22px;
+    border: none;
+    -moz-box-shadow: inset 3px 4px 5px rgba(0,0,0,0.15);
+    -webkit-box-shadow: inset 3px 4px 5px rgba(0,0,0,0.15);
+    box-shadow: inset 3px 4px 5px rgba(0,0,0,0.15);
+}
+
+input.submit {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    display: inline-block;
+    padding: 22px 60px;
+    border: 2px solid #f0ab3f;
+    font-size: 0.85em;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition:    all 0.2s;
+    -o-transition:      all 0.2s;
+    transition:         all 0.2s;
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 250px;
+    padding: 22px;
+    border: none;
+    -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.15);
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.15);
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.15);
+}
+
+
+
+
+/*==============================BUTTON===============================*/
+.button {
+    display: inline-block;
+    padding: 20px 60px;
+    border: 2px solid #f0ab3f;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+	-moz-box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.4);
+    -webkit-transition: all 0.2s;
+    -moz-transition:    all 0.2s;
+    -o-transition:      all 0.2s;
+    transition:         all 0.2s;
+    cursor: pointer;
+}
+#mc_embed_signup .button {
+	clear:both;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 600;
+	font-style: normal;
+	margin: 0 5px 10px 0;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: top;
+	white-space: nowrap;
+	width: auto;}
+
+
+.button.medium {
+    padding: 10px 30px;
+    font-size: 0.85em;
+}
+.button.small {
+    padding: 5px 15px;
+    font-size: 0.75em;
+}
+
+/*==========================================Newsletter============*/
+
+.newsletter {
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+
+.newsletter input {
+    display: inline-block;
+}
+
+
+/*CONTACT*/
+.contact-row {
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+.contact-row h4 {text-transform: none;}
+
+#contact h2{padding-top: 30px;}
+#contact p{padding-bottom: 40px;}
+
+
+
+/* === 11.2 CONTACT DETAILS === */
+
+.contact-details span {
+    display: block;
+}
+
+.contact-details .detail {
+    display: block;
+    margin-bottom: 5px;
+}
+.contact-details .detail:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contact-details .icon {
+    float: left;
+    width: 15px;
+	margin-right: 10px;
+}
+
+.contact-details .text {
+    float: left;
+    font-size: 0.85em;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 12. FOOTER
+/* --------------------------------------------------------------------- */
+
+/* === 12.1 TAGS === */
+
+#contact h2, p {
+	text-align: center;
+
+}
+
+/* === 12.2 BOTTOM BOX === */
+
+.bottom-box {
+	padding: 20px 0;
+	text-align: center;
+	font-size: 0.85em;
+	color: rgba(255,255,255,0.4);
+}
+
+/*================================Menü==================================*/
+.main_h {
+  position: fixed;
+  max-height: 50px;
+  z-index: 10;
+  width: 100%;
+  background: none;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+  top: -100px;
+  padding: 0 30px 6px 30px;	
+	-moz-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+.open-nav {
+  max-height: 450px !important;
+	background-color: rgba(39, 51, 61, 0.95);
+}
+.open-nav .mobile-toggle {
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.sticky {
+
+  opacity: 1;
+  top: 0px;
+}
+
+.logo {
+  width: 170px;
+  padding-top: 0px;
+  float: left;
+  display: block;
+  margin-top: 0;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+
+.logo img {
+	  padding-top: 8px;
+	  height: 45px;
+	  width: auto;
+}
+
+nav {
+	float: right;
+	width: 100%;
+	padding-top: 8px;
+}
+
+nav ul {
+	list-style: none;
+	overflow: hidden;
+	text-align: right;
+	padding: 15px 10% 0 0;
+	margin-bottom: 22px;
+	float: left;
+	width: 100%;
+}
+nav ul li {
+	vertical-align: middle;
+	line-height: 1.5;
+	display: block;
+	padding: 7px 0;
+	margin: 0;
+}
+
+nav ul li.social {
+	margin-left: 5px;
+	display: inline-block;
+	padding: 0;
+}
+
+nav ul a {
+  text-transform: uppercase;
+	-webkit-transition: color 200ms ease-in-out;
+  	-moz-transition: color 200ms ease-in-out;
+  	transition: color 200ms ease-in-out;	
+}
+
+.mobile-toggle {
+  display: block;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  margin-top: 13px;
+  top: 0;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+.mobile-toggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  display: block;
+}
+.mobile-toggle span:last-child {
+	margin-bottom: 0;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+
+.social {width: 35px; height: 35px;}
+
+
+/*----------------------NEU Logo---------------*/
+
+.neu-logo {
+	width: 20%;
+	min-width: 90px;
+	position: absolute;
+	left: -10px;
+	top: -50px;
+	-ms-transform: rotate(-7deg); /* IE 9 */
+	-webkit-transform: rotate(-7deg); /* Safari */
+	transform: rotate(-7deg);
+}
+
+.wiederda-logo {
+	width: 50%;
+	min-width: 90px;
+	position: absolute;
+	left: -10px;
+	top: -60px;
+	-ms-transform: rotate(-7deg); /* IE 9 */
+	-webkit-transform: rotate(-7deg); /* Safari */
+	transform: rotate(-7deg);
+}
+
+
+/*-----------------------COOKIE POPUP-------------*/
+
+.clearfix {
+	clear: both;
+}
+
+.eupopup-container {
+    min-height: 25%;
+	padding: 5px 20px;
+	font-size: 12px;
+	line-height: 1.2em;
+	text-align: center;
+	display: none;
+	z-index: 9999999;
+}
+
+.eupopup-container-bottom {
+	position: fixed;
+	bottom: 0; left: 0; right: 0;
+}
+
+.eupopup-closebutton {
+	font-size: 2em;
+	font-weight: 100;
+	line-height: 1;
+
+	filter: alpha(opacity=20);
+	position: absolute;
+	top: 0; right: 0;
+	padding: 5px 10px;
+}
+.eupopup-closebutton:hover,
+.eupopup-closebutton:active {
+	text-decoration: none;
+}
+
+.eupopup-head {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 7px;
+}
+
+.eupopup-buttons {
+	padding: 50px 0 5px 0;
+}
+
+.eupopup-button_1 {
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+.eupopup-button_2 {
+	font-weight: normal;
+	font-size: 1em;
+}
+
+.eupopup-button {
+	margin: 0 10px;
+}
+
+.eupopup-button:hover,
+.eupopup-button:focus {
+	text-decoration: underline;
+}
+
+.belegung-flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.toggle-box {
+    flex-basis: 100%;
+}
+
+.index-camp-zusatz {
+    width: 100%;
+	min-width: 90px;
+	position: absolute;
+	left: -20px;
+	top: 60px;
+	-ms-transform: rotate(-3deg); /* IE 9 */
+	-webkit-transform: rotate(-3deg); /* Safari */
+	transform: rotate(-3deg);
+}
+
+.index-camp-zusatz-neu {
+    width: 100%;
+	position: absolute;
+}
+
+.index-camp-zusatz-neu img.mkf {
+    position: relative;
+    width: 120px;
+    top: -65px;
+    right: -100%;
+    -ms-transform: rotate(-3deg) translateX(-90%); /* IE 9 */
+	-webkit-transform: rotate(-3deg) translateX(-90%); /* Safari */
+	transform: rotate(-3deg) translateX(-90%);
+}
+
+.index-camp-zusatz-neu img.classic {
+    position: relative;
+    width: 85%;
+    margin: auto;
+    top: -90px;
+
+
+}
+
+.termine-januar {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    z-index: 9;
+}
+
+.termine-januar img {
+    transform: translateX(-50%);
+    position: relative;
+    max-width: 500px;
+    top: 100px;
+    left: 50%;
+}
